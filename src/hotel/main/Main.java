@@ -30,7 +30,7 @@ public class Main {
                 case "1": // Dodanie pokoju
                     System.out.print("Podaj numer pokoju (np. 101): ");
                     int roomNumber = scanner.nextInt();
-                    scanner.nextLine(); // Czyszczenie bufora
+                    scanner.nextLine();
 
                     String type;
                     while (true) {
@@ -58,7 +58,7 @@ public class Main {
                     while (true) {
                         System.out.print("Czy pokój jest dostępny (0 = Nie, 1 = Tak): ");
                         available = scanner.nextInt();
-                        scanner.nextLine(); // Czyszczenie bufora
+                        scanner.nextLine();
 
                         if (available == 0 || available == 1) {
                             break;
@@ -93,7 +93,7 @@ public class Main {
                 case "4": // Aktualizacja pokoju
                     System.out.print("Podaj numer pokoju do aktualizacji (np. 101): ");
                     int updateRoomNumber = scanner.nextInt();
-                    scanner.nextLine(); // Czyszczenie bufora
+                    scanner.nextLine();
 
                     String newType;
                     while (true) {
@@ -112,7 +112,7 @@ public class Main {
                     while (true) {
                         System.out.print("Czy pokój jest dostępny (0 = Nie, 1 = Tak): ");
                         newAvailable = scanner.nextInt();
-                        scanner.nextLine(); // Czyszczenie bufora
+                        scanner.nextLine();
 
                         if (newAvailable == 0 || newAvailable == 1) {
                             break;
@@ -129,7 +129,7 @@ public class Main {
                 case "5": // Usunięcie pokoju
                     System.out.print("Podaj numer pokoju do usunięcia (np. 101): ");
                     int deleteRoomNumber = scanner.nextInt();
-                    scanner.nextLine(); // Czyszczenie bufora
+                    scanner.nextLine();
 
                     roomController.deleteRoom(deleteRoomNumber);
                     System.out.println("Pokój został usunięty pomyślnie!");

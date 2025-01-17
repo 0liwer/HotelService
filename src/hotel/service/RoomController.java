@@ -13,12 +13,12 @@ public class RoomController {
         rooms.add(room);
     }
 
-    // Pobranie wszystkich pokoi
+    // Wszystkie pokoje
     public List<Room> getAllRooms() {
         return rooms;
     }
 
-    // Pobranie dostępnych pokoi
+    // Dostępne pokoje
     public List<Room> getAvailableRooms() {
         List<Room> availableRooms = new ArrayList<>();
         for (Room room : rooms) {
@@ -29,7 +29,7 @@ public class RoomController {
         return availableRooms;
     }
 
-    // Aktualizacja danych pokoju
+    // Aktualizacja pokoju
     public void updateRoom(int roomNumber, String newType, boolean newAvailability) {
         for (Room room : rooms) {
             if (room.getRoomNumber() == roomNumber) {

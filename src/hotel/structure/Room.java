@@ -1,11 +1,11 @@
 package hotel.structure;
 
 public class Room {
-    private int roomNumber;  // Numer pokoju
-    private String type;     // Typ pokoju
-    private boolean available; // Dostępność pokoju
+    private int roomNumber;
+    private String type;
+    private boolean available;
 
-    // Klasa statyczna dla typów pokoi
+
     public static class RoomType {
         public static final String JEDNOOSOBOWY = "Jednoosobowy";
         public static final String DWUOSOBOWY = "Dwuosobowy";
@@ -17,14 +17,14 @@ public class Room {
         }
     }
 
-    // Konstruktor
+
     public Room(int roomNumber, String type, boolean available) {
         this.roomNumber = roomNumber;
         this.type = type;
         this.available = available;
     }
 
-    // Gettery i settery
+
     public int getRoomNumber() {
         return roomNumber;
     }
@@ -49,7 +49,7 @@ public class Room {
         this.available = available;
     }
 
-    // Reprezentacja tekstowa obiektu Room
+
     @Override
     public String toString() {
         return "Room{" +
